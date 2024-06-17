@@ -6,7 +6,7 @@
 
 # React State Management Theme Switcher with useContext Exercise
 
-For this weeks practice you will Create a simple theme switcher where dark/light mode are managed using React's useContext.
+For this weeks practice you will create a simple theme switcher where dark/light mode are managed using React useContext.
 
 ## Getting Started with the Project
 
