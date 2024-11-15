@@ -23,7 +23,7 @@ npm i && code . && npm run dev
 ### Looking for some hints?
 1. **Theme Management with `useContext`**
     - The `useContext` hook in React allows you to access values from a context without prop-drilling. For this exercise, you're using it to manage a simple theme switcher (light/dark mode).
-    - Define a context using `createContext()`. Remember to export both the context and a custom hook (e.g., `useTheme`) to make it easier to access the theme in your components. Follow the naming conventions when you create folders and files. Have a look at the [boilerplate](https://github.com/Technigo/react-vite-use-context-boiler-plate) if you need guidance.
+    - Define a context using `createContext()`. Remember to export the context. Follow the naming conventions when you create folders and files. Have a look at the [boilerplate](https://github.com/Technigo/react-vite-use-context-boiler-plate) if you need guidance.
 
 3.  **Integrating Components**
     - In your main `App.jsx`, import the theme toggler. 
