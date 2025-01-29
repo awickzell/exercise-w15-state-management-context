@@ -1,13 +1,21 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { App } from "./App.jsx";
-import { ThemeProvider } from "./context/ThemeContext";
-import "./styles.css";
+import { useEffect } from "react";
+import { useTheme } from "./context/useTheme";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <ThemeProvider>
-      <App />
-    </ThemeProvider>
-  </React.StrictMode>
-);
+export const App = () => {
+  const { theme, toggleTheme } = useTheme();
+
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
+
+  return (
+    <div>
+      <header className="app-header">
+        <h1>{theme === "light" ? "Light Mode" : "Dark Mode"}</h1>
+        <button onClick={toggleTheme}>
+          Switch to {theme === "light" ? "Dark" : "Light"} Mode
+        </button>
+      </header>
+    </div>
+  );
+};
